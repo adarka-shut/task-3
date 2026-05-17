@@ -470,7 +470,7 @@
     {
       "parameters": {
         "method": "POST",
-        "url": "=https://api.telegram.org/bot8694138140:AAFWxGp84yqxHlEXhxYsvJ0NYRdUrPhlAiw/sendMessage",
+        "url": "=https://api.telegram.org/botYOUR_BOT_TOKEN_HERE/sendMessage",
         "sendBody": true,
         "specifyBody": "json",
         "jsonBody": "={\n  \"chat_id\": {{ $('Format Summary').item.json.chatId }},\n  \"text\": {{ JSON.stringify($('Format Summary').item.json.telegramMessage) }},\n  \"parse_mode\": \"Markdown\",\n  \"reply_markup\": {\n    \"inline_keyboard\": [\n      [\n        {\n          \"text\": \"📝 Take Quiz Now\",\n          \"callback_data\": \"select_material_{{ $('Format Summary').item.json.materialId }}\"\n        }\n      ]\n    ]\n  }\n}",
@@ -599,7 +599,7 @@
     {
       "parameters": {
         "method": "POST",
-        "url": "=https://api.telegram.org/bot8694138140:AAFWxGp84yqxHlEXhxYsvJ0NYRdUrPhlAiw/sendMessage",
+        "url": "=https://api.telegram.org/botYOUR_BOT_TOKEN_HERE/sendMessage",
         "sendBody": true,
         "specifyBody": "json",
         "jsonBody": "={\n  \"chat_id\": {{ $('Build Topic Keyboard').item.json.chatId }},\n  \"text\": \"📋 Choose a topic for your quiz:\",\n  \"parse_mode\": \"Markdown\",\n  \"reply_markup\": {{ $('Build Topic Keyboard').item.json.keyboard }}\n}",
@@ -846,7 +846,7 @@
     {
       "parameters": {
         "method": "POST",
-        "url": "=https://api.telegram.org/bot8694138140:AAFWxGp84yqxHlEXhxYsvJ0NYRdUrPhlAiw/sendMessage",
+        "url": "=https://api.telegram.org/botYOUR_BOT_TOKEN_HERE/sendMessage",
         "sendBody": true,
         "specifyBody": "json",
         "jsonBody": "={\n  \"chat_id\": {{ $('Parse Quiz & Prepare Q1').item.json.chatId }},\n  \"text\": {{ JSON.stringify($('Parse Quiz & Prepare Q1').item.json.firstQuestionText) }},\n  \"parse_mode\": \"Markdown\",\n  \"reply_markup\": {{ $('Parse Quiz & Prepare Q1').item.json.firstQuestionKeyboard }}\n}",
@@ -1006,7 +1006,7 @@
     {
       "parameters": {
         "method": "POST",
-        "url": "=https://api.telegram.org/bot8694138140:AAFWxGp84yqxHlEXhxYsvJ0NYRdUrPhlAiw/sendMessage",
+        "url": "=https://api.telegram.org/botYOUR_BOT_TOKEN_HERE/sendMessage",
         "sendBody": true,
         "specifyBody": "json",
         "jsonBody": "={\n  \"chat_id\": {{ $('Process Answer').item.json.chatId }},\n  \"text\": {{ JSON.stringify($('Process Answer').item.json.nextQuestionText) }},\n  \"parse_mode\": \"Markdown\",\n  \"reply_markup\": {{ $('Process Answer').item.json.nextQuestionKeyboard }}\n}",
